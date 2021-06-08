@@ -25,5 +25,14 @@ $(document).ready(function(){
         };
 });
 
-// save input to localStorage
+// save input to localStorage -- how do I only do the current line
 
+// clear text area -- how do I only do this current line
+function clearText (){
+    var content = $('.content')
+    $('.clear').on('click', function() {
+        localStorage.clear();
+        content.val('');
+    })};
+
+$('.clear').on('click', clearText);
