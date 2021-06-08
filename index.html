@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./assets/style.css" />
   <title>Work Day Scheduler</title>
 </head>
 
@@ -21,15 +21,18 @@
   </header>
   <div class="container col-lg-8 center-block">
     <!-- Timeblocks go here -->
-    <div class="input-group">
+    <div class="input-group" id="main">
 
       <div class="input-group">
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon2">9am</span>
         </div>
-        <textarea class="form-control w-75 content" id="hour-9" rows="3"></textarea>
+        <textarea class="border-top form-control w-75 content" id="9" rows="3"></textarea>
         <div class=input-group-append>
           <button class="btn btn-outline-info save" type="button">Save</button>
+        </div>
+        <div class=input-group-append>
+          <button class="btn btn-outline-danger clear" type="button">Clear</button>
         </div>
       </div>
 
@@ -37,9 +40,12 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon2">10am</span>
         </div>
-        <textarea class="form-control w-75 content" id="hour-10" rows="3"></textarea>
+        <textarea class="border-top form-control w-75 content" id="10" rows="3"></textarea>
         <div class=input-group-append>
           <button class="btn btn-outline-info save" type="button">Save</button>
+          <div class=input-group-append>
+            <button class="btn btn-outline-danger clear" type="button">Clear</button>
+          </div>
         </div>
       </div>
 
@@ -47,9 +53,12 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon2">11am</span>
         </div>
-        <textarea class="form-control w-75 content" id="hour-11" rows="3"></textarea>
+        <textarea class="border-top form-control w-75 content" id="11" rows="3"></textarea>
         <div class=input-group-append>
           <button class="btn btn-outline-info save" type="button">Save</button>
+        </div>
+        <div class=input-group-append>
+          <button class="btn btn-outline-danger clear" type="button">Clear</button>
         </div>
       </div>
 
@@ -57,9 +66,12 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon2">12pm</span>
         </div>
-        <textarea class="form-control w-75 content" id="hour-12" rows="3"></textarea>
+        <textarea class="border-top form-control w-75 content" id="12" rows="3"></textarea>
         <div class=input-group-append>
           <button class="btn btn-outline-info save" type="button">Save</button>
+        </div>
+        <div class=input-group-append>
+          <button class="btn btn-outline-danger clear" type="button">Clear</button>
         </div>
       </div>
 
@@ -67,9 +79,12 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon2">1pm</span>
         </div>
-        <textarea class="form-control w-75 content" id="hour-13" rows="3"></textarea>
+        <textarea class="border-top form-control w-75 content" id="13" rows="3"></textarea>
         <div class=input-group-append>
           <button class="btn btn-outline-info save" type="button">Save</button>
+        </div>
+        <div class=input-group-append>
+          <button class="btn btn-outline-danger clear" type="button">Clear</button>
         </div>
       </div>
 
@@ -77,9 +92,12 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon2">2pm</span>
         </div>
-        <textarea class="form-control w-75 content" id="hour-9" rows="3"></textarea>
+        <textarea class="border-top form-control w-75 content" id="14" rows="3"></textarea>
         <div class=input-group-append>
           <button class="btn btn-outline-info save" type="button">Save</button>
+        </div>
+        <div class=input-group-append>
+          <button class="btn btn-outline-danger clear" type="button">Clear</button>
         </div>
       </div>
 
@@ -87,9 +105,12 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon2">3pm</span>
         </div>
-        <textarea class="form-control w-75 content" id="hour-14" rows="3"></textarea>
+        <textarea class="border-top form-control w-75 content" id="15" rows="3"></textarea>
         <div class=input-group-append>
           <button class="btn btn-outline-info save" type="button">Save</button>
+        </div>
+        <div class=input-group-append>
+          <button class="btn btn-outline-danger clear" type="button">Clear</button>
         </div>
       </div>
 
@@ -97,9 +118,12 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon2">4pm</span>
         </div>
-        <textarea class="form-control w-75 content" id="hour-15" rows="3"></textarea>
+        <textarea class="border-top form-control w-75 content" id="16" rows="3"></textarea>
         <div class=input-group-append>
           <button class="btn btn-outline-info save" type="button">Save</button>
+        </div>
+        <div class=input-group-append>
+          <button class="btn btn-outline-danger clear" type="button">Clear</button>
         </div>
       </div>
 
@@ -107,9 +131,12 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon2">5pm</span>
         </div>
-        <textarea class="form-control w-75 content" id="hour-16" rows="3"></textarea>
+        <textarea class="border-top form-control w-75 content" id="17" rows="3"></textarea>
         <div class=input-group-append>
           <button class="btn btn-outline-info save" type="button">Save</button>
+        </div>
+        <div class=input-group-append>
+          <button class="btn btn-outline-danger clear" type="button">Clear</button>
         </div>
       </div>
 
@@ -118,7 +145,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src="./script.js"></script>
+  <script src="./assets/script.js"></script>
 </body>
 
 </html>
