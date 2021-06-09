@@ -12,3 +12,4 @@
 - The tool will conditionally format the color of each hour depending on whether it is before, during, or after the current hour. 
 
 ## Screenshot
+![Deployed Day-Planner Application](images/dayplanner-ss.png)
