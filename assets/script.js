@@ -7,32 +7,41 @@ var biggest = Math.max.apply(Math, $('.input-group-text').map(function(){ return
 $('.input-group-text').width(biggest);
 
 // format color based on what time it is
-var currentTime = moment().format('HH');
-
 $(document).ready(function(){
-    var idArr = [];
-        $(".content").each(function(){
-            idArr.push($(this).attr("id"));
-        });
-        for (var i = 0; i < idArr.length; i++) {
-            if (currentTime > idArr[i]){
-                $('.content').css("background-color", "#d3d3d3");
-            } if (currentTime == idArr[i]) {
-                $('.content').css("background-color", "#d2f8d2");
-            } if (currentTime < idArr[i]) {
-                $('.content').css("background-color", "#e1f1ff");
-            }
-        };
+    const textAreaIDs = $(`textarea`).map(function () {
+        return this.id;
+    }).get();
+    for (var i = 0; i < textAreaIDs.length; i++) {
+        $(`#${textAreaIDs[i]}`).text(localStorage.getItem(textAreaIDs[i]))
+    }
+    const currentTime = parseInt(moment().format('HH'))
+    $('.content').each((_i, content) => {
+        const id = parseInt(content.id)
+        let bgColor = ''
+        if (currentTime > id){
+            bgColor = '#d3d3d3'
+        } else if (currentTime == id) {
+            bgColor = '#d2f8d2'
+        } else if (currentTime < id) {
+            bgColor = '#e1f1ff'
+        }
+        $(content).css('background-color', bgColor);
+    });
 });
 
-// save input to localStorage -- how do I only do the current line
-
-// clear text area -- how do I only do this current line
-function clearText (){
-    var content = $('.content')
-    $('.clear').on('click', function() {
-        localStorage.clear();
-        content.val('');
-    })};
+// save input to localStorage
+function saveText(e) {
+    const slot = $(e.target).attr("data-timeslot");
+    const saveT = $(`textarea[data-timeslot=${slot}]`).val();
+    localStorage.setItem(slot, saveT);
+}
+                          
+// clear text area
+function clearText(e) {
+    const slot = $(e.target).attr("data-timeslot");
+    $(`textarea[data-timeslot=${slot}]`).val('');
+    localStorage.removeItem(slot);
+};
 
 $('.clear').on('click', clearText);
+$('.save').on('click', saveText);

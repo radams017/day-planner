@@ -19,7 +19,7 @@
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
   </header>
-  <div class="container col-lg-8 center-block">
+  <div class="container col-lg-9 center-block">
     <!-- Timeblocks go here -->
     <div class="input-group" id="main">
 
@@ -27,12 +27,12 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon2">9am</span>
         </div>
-        <textarea class="border-top form-control w-75 content" id="9" rows="3"></textarea>
+        <textarea class="border-top form-control w-75 content" data-timeslot="09" id="09" rows="3"></textarea>
         <div class=input-group-append>
-          <button class="btn btn-outline-info save" type="button">Save</button>
+          <button class="btn btn-info border save" data-timeslot="09" type="button">Save</button>
         </div>
         <div class=input-group-append>
-          <button class="btn btn-outline-danger clear" type="button">Clear</button>
+          <button class="btn btn-outline-danger clear" data-timeslot="09" type="button">Clear</button>
         </div>
       </div>
 
@@ -40,11 +40,11 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon2">10am</span>
         </div>
-        <textarea class="border-top form-control w-75 content" id="10" rows="3"></textarea>
+        <textarea class="border-top form-control w-75 content" data-timeslot="10" id="10" rows="3"></textarea>
         <div class=input-group-append>
-          <button class="btn btn-outline-info save" type="button">Save</button>
+          <button class="btn btn-info border save" data-timeslot="10" type="button">Save</button>
           <div class=input-group-append>
-            <button class="btn btn-outline-danger clear" type="button">Clear</button>
+            <button class="btn btn-outline-danger clear" data-timeslot="10" type="button">Clear</button>
           </div>
         </div>
       </div>
@@ -53,12 +53,12 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon2">11am</span>
         </div>
-        <textarea class="border-top form-control w-75 content" id="11" rows="3"></textarea>
+        <textarea class="border-top form-control w-75 content" data-timeslot="11" id="11" rows="3"></textarea>
         <div class=input-group-append>
-          <button class="btn btn-outline-info save" type="button">Save</button>
+          <button class="btn btn-info border save" data-timeslot="11" type="button">Save</button>
         </div>
         <div class=input-group-append>
-          <button class="btn btn-outline-danger clear" type="button">Clear</button>
+          <button class="btn btn-outline-danger clear" data-timeslot="11" type="button">Clear</button>
         </div>
       </div>
 
@@ -66,12 +66,12 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon2">12pm</span>
         </div>
-        <textarea class="border-top form-control w-75 content" id="12" rows="3"></textarea>
+        <textarea class="border-top form-control w-75 content" data-timeslot="12" id="12" rows="3"></textarea>
         <div class=input-group-append>
-          <button class="btn btn-outline-info save" type="button">Save</button>
+          <button class="btn btn-info border save" data-timeslot="12" type="button">Save</button>
         </div>
         <div class=input-group-append>
-          <button class="btn btn-outline-danger clear" type="button">Clear</button>
+          <button class="btn btn-outline-danger clear" data-timeslot="12" type="button">Clear</button>
         </div>
       </div>
 
@@ -79,12 +79,12 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon2">1pm</span>
         </div>
-        <textarea class="border-top form-control w-75 content" id="13" rows="3"></textarea>
+        <textarea class="border-top form-control w-75 content" data-timeslot="13" id="13" rows="3"></textarea>
         <div class=input-group-append>
-          <button class="btn btn-outline-info save" type="button">Save</button>
+          <button class="btn btn-info border save" data-timeslot="13" type="button">Save</button>
         </div>
         <div class=input-group-append>
-          <button class="btn btn-outline-danger clear" type="button">Clear</button>
+          <button class="btn btn-outline-danger clear" data-timeslot="13" type="button">Clear</button>
         </div>
       </div>
 
@@ -92,12 +92,12 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon2">2pm</span>
         </div>
-        <textarea class="border-top form-control w-75 content" id="14" rows="3"></textarea>
+        <textarea class="border-top form-control w-75 content" data-timeslot="14" id="14" rows="3"></textarea>
         <div class=input-group-append>
-          <button class="btn btn-outline-info save" type="button">Save</button>
+          <button class="btn btn-info border save" data-timeslot="14" type="button">Save</button>
         </div>
         <div class=input-group-append>
-          <button class="btn btn-outline-danger clear" type="button">Clear</button>
+          <button class="btn btn-outline-danger clear" data-timeslot="14" type="button">Clear</button>
         </div>
       </div>
 
@@ -105,12 +105,12 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon2">3pm</span>
         </div>
-        <textarea class="border-top form-control w-75 content" id="15" rows="3"></textarea>
+        <textarea class="border-top form-control w-75 content" data-timeslot="15" id="15" rows="3"></textarea>
         <div class=input-group-append>
-          <button class="btn btn-outline-info save" type="button">Save</button>
+          <button class="btn btn-info border save" data-timeslot="15" type="button">Save</button>
         </div>
         <div class=input-group-append>
-          <button class="btn btn-outline-danger clear" type="button">Clear</button>
+          <button class="btn btn-outline-danger clear" data-timeslot="15" type="button">Clear</button>
         </div>
       </div>
 
@@ -118,12 +118,12 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon2">4pm</span>
         </div>
-        <textarea class="border-top form-control w-75 content" id="16" rows="3"></textarea>
+        <textarea class="border-top form-control w-75 content" data-timeslot="16" id="16" rows="3"></textarea>
         <div class=input-group-append>
-          <button class="btn btn-outline-info save" type="button">Save</button>
+          <button class="btn btn-info border save" data-timeslot="16" type="button">Save</button>
         </div>
         <div class=input-group-append>
-          <button class="btn btn-outline-danger clear" type="button">Clear</button>
+          <button class="btn btn-outline-danger clear" data-timeslot="16" type="button">Clear</button>
         </div>
       </div>
 
@@ -131,12 +131,12 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon2">5pm</span>
         </div>
-        <textarea class="border-top form-control w-75 content" id="17" rows="3"></textarea>
+        <textarea class="border-top form-control w-75 content" data-timeslot="17" id="17" rows="3"></textarea>
         <div class=input-group-append>
-          <button class="btn btn-outline-info save" type="button">Save</button>
+          <button class="btn btn-info border save" data-timeslot="17" type="button">Save</button>
         </div>
         <div class=input-group-append>
-          <button class="btn btn-outline-danger clear" type="button">Clear</button>
+          <button class="btn btn-outline-danger clear" data-timeslot="17" type="button">Clear</button>
         </div>
       </div>
 
